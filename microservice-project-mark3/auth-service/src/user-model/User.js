@@ -15,11 +15,35 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  phone: {
+    type: String,
+    required: false,
+},
   isAdmin: {
     type: Boolean,
-    required: true,
+    required: false,
     default: false
   },
+  street: {
+    type: String,
+    default: ''
+},
+apartment: {
+    type: String,
+    default: ''
+},
+zip :{
+    type: String,
+    default: ''
+},
+city: {
+    type: String,
+    default: ''
+},
+country: {
+    type: String,
+    default: ''
+}
 },{
     timestamps: true
 })
