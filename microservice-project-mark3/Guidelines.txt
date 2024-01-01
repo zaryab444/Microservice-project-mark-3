@@ -1,0 +1,3 @@
+User credential 
+"email": "martin@yomail.com",
+"password": "1"
