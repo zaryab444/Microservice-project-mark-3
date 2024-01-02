@@ -13,7 +13,6 @@ const isAuthenticated = require ("../../../auth-middleware/isAuthenticated")
 
 router.post('/register',  registerUser);
 router.post('/login', loginUser);
-// router.get('/', allUsers);
 router.route('/').get(isAuthenticated,allUsers)
 router.get('/:id',findUserById);
 router.put('/:id',updateUser);
